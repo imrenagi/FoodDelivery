@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		1C1DFC4B28500BE600BCF6AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC4A28500BE600BCF6AE /* AppDelegate.swift */; };
 		1C1DFC4D28500BE600BCF6AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC4C28500BE600BCF6AE /* SceneDelegate.swift */; };
-		1C1DFC4F28500BE600BCF6AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC4E28500BE600BCF6AE /* ViewController.swift */; };
-		1C1DFC5228500BE600BCF6AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1DFC5028500BE600BCF6AE /* Main.storyboard */; };
 		1C1DFC5428500BE800BCF6AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1DFC5328500BE800BCF6AE /* Assets.xcassets */; };
 		1C1DFC5728500BE800BCF6AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1DFC5528500BE800BCF6AE /* LaunchScreen.storyboard */; };
 		1C1DFC6228500BE900BCF6AE /* FoodDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC6128500BE900BCF6AE /* FoodDeliveryTests.swift */; };
 		1C1DFC6C28500BE900BCF6AE /* FoodDeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC6B28500BE900BCF6AE /* FoodDeliveryUITests.swift */; };
 		1C1DFC6E28500BE900BCF6AE /* FoodDeliveryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC6D28500BE900BCF6AE /* FoodDeliveryUITestsLaunchTests.swift */; };
+		1C1DFC7D28500C4000BCF6AE /* Ftux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1DFC7C28500C4000BCF6AE /* Ftux.storyboard */; };
+		1C1DFC8128500C8500BCF6AE /* FtuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC8028500C8500BCF6AE /* FtuxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		1C1DFC4728500BE600BCF6AE /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1DFC4A28500BE600BCF6AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C1DFC4C28500BE600BCF6AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1C1DFC4E28500BE600BCF6AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C1DFC5128500BE600BCF6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C1DFC5328500BE800BCF6AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1DFC5628500BE800BCF6AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C1DFC5828500BE800BCF6AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		1C1DFC6728500BE900BCF6AE /* FoodDeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodDeliveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1DFC6B28500BE900BCF6AE /* FoodDeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUITests.swift; sourceTree = "<group>"; };
 		1C1DFC6D28500BE900BCF6AE /* FoodDeliveryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C1DFC7C28500C4000BCF6AE /* Ftux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ftux.storyboard; sourceTree = "<group>"; };
+		1C1DFC8028500C8500BCF6AE /* FtuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,9 @@
 		1C1DFC4928500BE600BCF6AE /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				1C1DFC7A28500C1100BCF6AE /* Modules */,
 				1C1DFC4A28500BE600BCF6AE /* AppDelegate.swift */,
 				1C1DFC4C28500BE600BCF6AE /* SceneDelegate.swift */,
-				1C1DFC4E28500BE600BCF6AE /* ViewController.swift */,
-				1C1DFC5028500BE600BCF6AE /* Main.storyboard */,
 				1C1DFC5328500BE800BCF6AE /* Assets.xcassets */,
 				1C1DFC5528500BE800BCF6AE /* LaunchScreen.storyboard */,
 				1C1DFC5828500BE800BCF6AE /* Info.plist */,
@@ -125,6 +124,23 @@
 				1C1DFC6D28500BE900BCF6AE /* FoodDeliveryUITestsLaunchTests.swift */,
 			);
 			path = FoodDeliveryUITests;
+			sourceTree = "<group>";
+		};
+		1C1DFC7A28500C1100BCF6AE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1C1DFC7B28500C3100BCF6AE /* Ftux */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1C1DFC7B28500C3100BCF6AE /* Ftux */ = {
+			isa = PBXGroup;
+			children = (
+				1C1DFC7C28500C4000BCF6AE /* Ftux.storyboard */,
+				1C1DFC8028500C8500BCF6AE /* FtuxViewController.swift */,
+			);
+			path = Ftux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1DFC5728500BE800BCF6AE /* LaunchScreen.storyboard in Resources */,
+				1C1DFC7D28500C4000BCF6AE /* Ftux.storyboard in Resources */,
 				1C1DFC5428500BE800BCF6AE /* Assets.xcassets in Resources */,
-				1C1DFC5228500BE600BCF6AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1DFC4F28500BE600BCF6AE /* ViewController.swift in Sources */,
+				1C1DFC8128500C8500BCF6AE /* FtuxViewController.swift in Sources */,
 				1C1DFC4B28500BE600BCF6AE /* AppDelegate.swift in Sources */,
 				1C1DFC4D28500BE600BCF6AE /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C1DFC5028500BE600BCF6AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C1DFC5128500BE600BCF6AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C1DFC5528500BE800BCF6AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +452,8 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Ftux;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +481,8 @@
 				INFOPLIST_FILE = FoodDelivery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Ftux;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
