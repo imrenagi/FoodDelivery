@@ -15,16 +15,72 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yP-ir-THg">
+                                <rect key="frame" x="56" y="732" width="302" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.31482863430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="t0s-mP-qfU"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Discover the best foods from over 1,000 restaurants and fast delivery to your doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpu-re-w0J">
+                                <rect key="frame" x="56" y="658.5" width="302" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Find Food You Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwo-d2-TKW">
+                                <rect key="frame" x="36" y="582.5" width="362" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="EzZ-zr-OCV">
+                                <rect key="frame" x="56" y="532.5" width="302" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rTo-zS-G6R"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.31482863430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_ftux_1" translatesAutoresizingMaskIntoConstraints="NO" id="pxT-jR-yig">
+                                <rect key="frame" x="48" y="100" width="318" height="402.5"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2yP-ir-THg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="3uo-Uf-rT8"/>
+                            <constraint firstItem="pwo-d2-TKW" firstAttribute="top" secondItem="EzZ-zr-OCV" secondAttribute="bottom" constant="30" id="4do-ob-M4F"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pwo-d2-TKW" secondAttribute="trailing" constant="16" id="8OS-Eg-m3J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EzZ-zr-OCV" secondAttribute="trailing" constant="36" id="8eU-XQ-zh2"/>
+                            <constraint firstItem="pxT-jR-yig" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="DUj-GM-8En"/>
+                            <constraint firstItem="pxT-jR-yig" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="56" id="KMz-qO-Wvd"/>
+                            <constraint firstItem="pwo-d2-TKW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="Lrv-R2-n4A"/>
+                            <constraint firstItem="Cpu-re-w0J" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="36" id="Nse-BP-8AP"/>
+                            <constraint firstItem="Cpu-re-w0J" firstAttribute="top" secondItem="pwo-d2-TKW" secondAttribute="bottom" constant="40" id="OP7-7G-ZYo"/>
+                            <constraint firstItem="EzZ-zr-OCV" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="36" id="S2S-Zt-BDD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2yP-ir-THg" secondAttribute="trailing" constant="36" id="bhz-1I-H1o"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cpu-re-w0J" secondAttribute="trailing" constant="36" id="eU3-W2-zbw"/>
+                            <constraint firstItem="EzZ-zr-OCV" firstAttribute="top" secondItem="pxT-jR-yig" secondAttribute="bottom" constant="30" id="j46-wd-QEt"/>
+                            <constraint firstItem="2yP-ir-THg" firstAttribute="top" secondItem="Cpu-re-w0J" secondAttribute="bottom" constant="40" id="jId-ha-48j"/>
+                            <constraint firstItem="2yP-ir-THg" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="36" id="mdg-sp-Y9N"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2yP-ir-THg" secondAttribute="bottom" constant="80" id="xSk-7X-W0z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pxT-jR-yig" secondAttribute="trailing" constant="48" id="xqH-bj-coY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="110"/>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>
+        <image name="img_ftux_1" width="225" height="295"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
