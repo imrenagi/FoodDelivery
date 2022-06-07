@@ -26,6 +26,9 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTapped:forEvent:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7RS-Lm-hnY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Discover the best foods from over 1,000 restaurants and fast delivery to your doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpu-re-w0J">
                                 <rect key="frame" x="56" y="658.5" width="302" height="33.5"/>
@@ -73,6 +76,12 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pxT-jR-yig" secondAttribute="trailing" constant="48" id="xqH-bj-coY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="img" destination="pxT-jR-yig" id="ihp-rK-xes"/>
+                        <outlet property="nextButton" destination="2yP-ir-THg" id="cVQ-jv-K7G"/>
+                        <outlet property="subTitleLabel" destination="Cpu-re-w0J" id="TTg-yF-kXX"/>
+                        <outlet property="titleLabel" destination="pwo-d2-TKW" id="gdM-1Y-EGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

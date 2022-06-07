@@ -9,13 +9,29 @@ import UIKit
 
 class FtuxViewController: UIViewController {
 
+//    TODO add array of object to store the data for each swipe
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setup()
     }
     
-
+    func setup() {
+        nextButton.layer.cornerRadius = 25
+        nextButton.clipsToBounds = true
+    }
+    
+    @IBAction func nextButtonTapped(_ sender: UIButton, forEvent event: UIEvent) {
+        img.image = UIImage(named: "img_ftux_2")
+        titleLabel.text = "Fast Delivery"
+        subTitleLabel.text = "Fast food delivery to your home, office wherever you are"
+    }
+    
     /*
     // MARK: - Navigation
 
