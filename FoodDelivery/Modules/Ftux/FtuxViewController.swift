@@ -7,6 +7,12 @@
 
 import UIKit
 
+struct FtuxData {
+    var image: String
+    var title: String
+    var subTitle: String
+}
+
 class FtuxViewController: UIViewController {
 
 //    TODO add array of object to store the data for each swipe
@@ -15,6 +21,14 @@ class FtuxViewController: UIViewController {
     @IBOutlet weak var subTitleLabel: UILabel!
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
+    
+    let data: [FtuxData] = [
+        FtuxData(image: "img_ftux_1", title: "Find Food You Love", subTitle: "Discover the best foods from over 1,000 restaurants and fast delivery to your doorstep"),
+        FtuxData(image:"img_ftux_2", title: "Fast Delivery", subTitle: "Fast food delivery to your home, office wherever you are"),
+        FtuxData(image: "img_ftux_3", title: "Live Tracking", subTitle: "Real time tracking of your food on the app once you placed the order")
+    ]
+    var currPage: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,9 +41,16 @@ class FtuxViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton, forEvent event: UIEvent) {
-        img.image = UIImage(named: "img_ftux_2")
-        titleLabel.text = "Fast Delivery"
-        subTitleLabel.text = "Fast food delivery to your home, office wherever you are"
+        currPage += 1
+        if currPage < data.count {
+            setData(data: data[currPage])
+        }
+    }
+    
+    func setData(data: FtuxData) {
+        img.image = UIImage(named: data.image)
+        titleLabel.text = data.title
+        subTitleLabel.text = data.subTitle
     }
     
     /*
