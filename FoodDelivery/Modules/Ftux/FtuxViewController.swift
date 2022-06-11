@@ -78,13 +78,11 @@ extension FtuxViewController: UICollectionViewDataSource {
     }
 }
 
-extension FtuxViewController: UICollectionViewDelegate {
-    
+extension FtuxViewController: UICollectionViewDelegate {    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let page = Int(scrollView.contentOffset.x / scrollView.frame.width)
         updatePage(page)
     }
-    
 }
 
 extension FtuxViewController: UICollectionViewDelegateFlowLayout {
