@@ -16,6 +16,8 @@
 		1C1DFC6E28500BE900BCF6AE /* FoodDeliveryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC6D28500BE900BCF6AE /* FoodDeliveryUITestsLaunchTests.swift */; };
 		1C1DFC7D28500C4000BCF6AE /* Ftux.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1DFC7C28500C4000BCF6AE /* Ftux.storyboard */; };
 		1C1DFC8128500C8500BCF6AE /* FtuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1DFC8028500C8500BCF6AE /* FtuxViewController.swift */; };
+		1CEB30A72854CF50007D0BF6 /* Ftux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB30A62854CF50007D0BF6 /* Ftux.swift */; };
+		1CEB30A92854D651007D0BF6 /* FtuxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEB30A82854D651007D0BF6 /* FtuxViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1C1DFC6D28500BE900BCF6AE /* FoodDeliveryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1C1DFC7C28500C4000BCF6AE /* Ftux.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ftux.storyboard; sourceTree = "<group>"; };
 		1C1DFC8028500C8500BCF6AE /* FtuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewController.swift; sourceTree = "<group>"; };
+		1CEB30A62854CF50007D0BF6 /* Ftux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ftux.swift; sourceTree = "<group>"; };
+		1CEB30A82854D651007D0BF6 /* FtuxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		1C1DFC4928500BE600BCF6AE /* FoodDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				1CEB30A52854CF3C007D0BF6 /* Models */,
 				1C1DFC7A28500C1100BCF6AE /* Modules */,
 				1C1DFC4A28500BE600BCF6AE /* AppDelegate.swift */,
 				1C1DFC4C28500BE600BCF6AE /* SceneDelegate.swift */,
@@ -139,8 +144,17 @@
 			children = (
 				1C1DFC7C28500C4000BCF6AE /* Ftux.storyboard */,
 				1C1DFC8028500C8500BCF6AE /* FtuxViewController.swift */,
+				1CEB30A82854D651007D0BF6 /* FtuxViewCell.swift */,
 			);
 			path = Ftux;
+			sourceTree = "<group>";
+		};
+		1CEB30A52854CF3C007D0BF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CEB30A62854CF50007D0BF6 /* Ftux.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CEB30A72854CF50007D0BF6 /* Ftux.swift in Sources */,
 				1C1DFC8128500C8500BCF6AE /* FtuxViewController.swift in Sources */,
+				1CEB30A92854D651007D0BF6 /* FtuxViewCell.swift in Sources */,
 				1C1DFC4B28500BE600BCF6AE /* AppDelegate.swift in Sources */,
 				1C1DFC4D28500BE600BCF6AE /* SceneDelegate.swift in Sources */,
 			);
